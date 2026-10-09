@@ -1,0 +1,39 @@
+{
+  "currency": "EUR",
+  "runs": [
+    { "id": "run-1", "workflow": "quote-followup", "cost_cents": 40 },
+    { "id": "run-2", "workflow": "quote-followup", "cost_cents": 35 }
+  ],
+  "leads": [
+    { "id": "lead-1", "source": "synthetic-meta" },
+    { "id": "lead-2", "source": "synthetic-web" }
+  ],
+  "quotes": [
+    {
+      "id": "quote-1",
+      "lead_id": "lead-1",
+      "run_id": "run-1",
+      "total_cents": 12500
+    },
+    {
+      "id": "quote-2",
+      "lead_id": "lead-2",
+      "run_id": "run-2",
+      "total_cents": 9900
+    }
+  ],
+  "invoices": [
+    {
+      "id": "invoice-1",
+      "quote_id": "quote-1",
+      "status": "paid",
+      "paid_cents": 12500
+    },
+    {
+      "id": "invoice-2",
+      "quote_id": "quote-2",
+      "status": "open",
+      "paid_cents": 0
+    }
+  ]
+}

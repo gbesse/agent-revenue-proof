@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-revenue-proof",
+  "version": "0.1.0",
+  "description": "Rapprochez les revenus / Reconcile revenue / Concilie ingresos",
+  "author": {
+    "name": "Guillaume Besse",
+    "url": "https://github.com/gbesse"
+  },
+  "homepage": "https://github.com/gbesse/agent-revenue-proof",
+  "repository": "https://github.com/gbesse/agent-revenue-proof",
+  "license": "MIT",
+  "keywords": ["agents", "mcp", "open-source"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "agent-revenue-proof",
+        "shortDescription": "Revenus / Revenue / Ingresos",
+        "longDescription": "Rapprochez les revenus / Reconcile revenue / Concilie ingresos"
+      }
+    }
+  }
+}

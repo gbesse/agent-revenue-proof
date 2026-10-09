@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "agent-revenue-proof": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/src/cli.js", "serve", "${PLUGIN_DATA}/data.json"]
+    }
+  }
+}
